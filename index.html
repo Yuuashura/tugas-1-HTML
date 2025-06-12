@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Yudis</title>
-    <link rel="icon" type="image/png" href="https://files.catbox.moe/25kspf.png">
+    <link rel="icon" type="image/png" href="/pict/icon.png">
     <style>
         * {
             padding: 0;
@@ -22,7 +22,7 @@
             color: #FFFECB;
             display: flex;
             justify-content: space-between;
-            background-color: #3761e1;
+            background-color: #4472ff;
             padding: 10px 15px;
             top: 0; 
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.354);
@@ -30,11 +30,15 @@
         }
 
         body{
-            background: url("https://files.catbox.moe/rs197x.jpg");
+            background: url("pict/background.jpg");
             background-size: cover;     
             background-position: fixed;       
             min-height: 100vh;
             padding-top: 100px;
+        }
+
+        body::-webkit-scrollbar{
+            display: none;
         }
 
 
@@ -46,9 +50,11 @@
             margin-top: 3px;
             margin-left: 15px;
             border-radius: 20px;
+            text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.308);
         }
 
         .right-head {
+            display: flex;
             font-size: 25px;
             margin-right: 30px;
 
@@ -77,6 +83,7 @@
             border-radius: 10px;
             transition: 0.3s ease;
             cursor: pointer;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.445);
         }
 
         nav h5:hover {
@@ -193,9 +200,34 @@
         .contact {
             font-size: 15px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             margin: 10px 50px 15px 50px;
         }
+
+        .contact p {
+            margin: 0px 50px;
+        }
+
+        .sosmed {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sosmed img {
+            border-radius: 50%;
+            padding: 4px;
+            background-color: rgba(255, 255, 255, 0.237);
+            width: 30px;
+            backdrop-filter: blur(10px);
+            margin: 0px 0px 10px 25px;
+        }
+
+        .sosmed-judul {
+            font-size: 23px;
+            margin-left: 5px;
+        }
+
+
 
         .akhiran {
             text-align: center;
@@ -207,35 +239,32 @@
 
 <body>
     <header>
-        <nav>
         <div class="left-head">
             <h1 class="Nama">Yudistira Syaputra</h1>
             <p>Full Stack Developer</p>
         </div>
+        <nav>
         <div class="right-head">
-                    <h5>
-                        <a href="https://yuuashura.github.io/biodata-yuu-de-fontaine/public/index.html" target="_blank" >Tentang Saya</a>
+                    <h5><a href="#tentang-saya" target="_self" >Tentang Saya</a>
                     </h5>
-                    <h5>
-                        Pengalaman
+                    <h5><a href="#pengalaman">Pengalaman</a>
                     </h5>
-                    <h5>    
-                        Kontak
+                    <h5><a href="#kontak">Kontak</a>
                     </h5>
                 </ul>
             </nav>
         </div>
         </header>
         <main>
-            <article>
-                <div class="tentang-saya">
+            <article>   
+                <div class="tentang-saya" id="tentang-saya">
                     <div class="t-tengah">
                 <h3>Tentang Saya</h3>
                 <p>Terakhir diperbarui 10 Januari 2025</p>
                 <ul>
                     <figure>
 
-                            <img src="https://files.catbox.moe/21mf5x.jpeg" class="pp" alt="poto">
+                            <img src="/pict/profile.jpg" class="pp" alt="poto">
                             <figcaption>
                                 Tessia Eralith - Pahlawan Dunia
                             </div>
@@ -283,13 +312,11 @@
         </summary>
     </details>
     <section>
-
-        <h1 class="peng">Pengalaman</h1>
+        <h1 class="peng" id="pengalaman">Pengalaman</h1>
         <p class="kesatria">Kesatria Kerajaan<p>
-        <p class="pt"><strong>Sword Academy Elenoir </strong>| 10 Januari - Sekarang</p>
-    </article>
-        <h2>Tanggung Jawab</h2>
-        <div class="tg-jwb">
+            <p class="pt"><strong>Sword Academy Elenoir </strong>| 10 Januari - Sekarang</p>
+            <h2>Tanggung Jawab</h2>
+            <div class="tg-jwb">
             <ul>
                 <div class="jud">
                     <li>Mengajar
@@ -306,12 +333,13 @@
                 Daily Life
             </li>
             <li class="ju-01">
-                    Push Up 200
-                </li>
-                <li class="ju-01">Joging 100km</li>
-                <li class="ju-01">Farming EXP 3.000.000.000</li>
+                Push Up 200
+            </li>
+            <li class="ju-01">Joging 100km</li>
+            <li class="ju-01">Farming EXP 3.000.000.000</li>
             </ul>
     </ul>
+</article>
 </div>
 </section>
 </main>
@@ -319,18 +347,27 @@
 
 
 <footer>
-    <h1 class="kont">Kontak & Informasi</h1>
+    <h1 class="kont" id="kontak">Kontak & Informasi</h1>
     <div class="contact">
         <p style="font-size: 23px;"><strong><em>Email :</strong> tzyudistira@gmail.com</a></em></p>
         <p style="font-size: 23px;"><strong><em>Phone : <a href="wa.me/6281370040608">+62813-7004-0608</strong></em></p></a>
-        <p style="font-size: 23px;"><strong><em>Instagram :</strong><a href="https://instagram.com/yudis.ashura" target="_blank">@yudis.ashura</a></em></p>
-        <p style="font-size: 23px;"><strong><em>Github :</strong><a href="https://github.com/yuuashura">Yuuashura</a></em></p>
+    </div>
+    <div class="sosmed">
+        <img src=" https://files.catbox.moe/gx8y7i.png" alt="">
+        <a href="https://instagram.com/yudis.ashura"><h1 class="sosmed-judul">instagram</h1></a>
+
+        <img src="https://files.catbox.moe/4aw2ox.png" alt="">
+        <a href="https://github.com/Yuuashura"><h1 class="sosmed-judul">github</h1></a>
+
+        <img src="https://files.catbox.moe/8vq1l8.png" alt="">
+        <a href="https://tiktok.com/alyaa.kawaiii"><h1 class="sosmed-judul">Tiktok</h1></a>
+
+        <img src="https://files.catbox.moe/5socp7.png" alt="">
+        <a href="https://Facebook.com/Yudis.ahura"><h1 class="sosmed-judul">Facebook</h1></a>
     </div>
         <div class="akhiran">
             <p>© Yudistira Syaputra, CV Terakhir diperbarui pada 10 Juni 2025, 23:59 WIB</p>
     </div>
 </footer>
-
 </body>
-
 </html>
